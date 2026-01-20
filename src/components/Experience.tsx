@@ -102,7 +102,7 @@ export default function Experience() {
                   <ul className="space-y-2">
                     {exp.achievements.map((achievement, achIndex) => (
                       <li key={achIndex} className="flex items-start gap-3">
-                        <Card className="border-accent">▸</Card>
+                        <span className="text-accent mt-1">•</span>
                         <span className="text-text-primary leading-relaxed">
                           {achievement}
                         </span>

@@ -80,14 +80,15 @@ export default function AllProjects() {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
-          <Card 
-            key={index} 
-            className={`aspect-square flex flex-col p-6 hover:border-accent transition-colors overflow-hidden ${
-              project.featured ? 'border-accent' : ''
-            }`}
-          >
+      <div className="overflow-x-auto pb-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 min-w-max">
+          {projects.map((project, index) => (
+            <Card 
+              key={index} 
+              className={`w-80 aspect-square flex flex-col p-6 hover:border-accent transition-colors overflow-hidden ${
+                project.featured ? 'border-accent' : ''
+              }`}
+            >
             <div className="flex flex-col h-full space-y-4">
               <div className="flex-shrink-0">
                 <h3 className="heading text-lg text-text-primary mb-2">
@@ -120,6 +121,7 @@ export default function AllProjects() {
           </Card>
         ))}
       </div>
+    </div>
     </Section>
   )
 }
