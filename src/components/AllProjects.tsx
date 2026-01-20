@@ -52,10 +52,10 @@ export default function AllProjects() {
     <Section id="projects">
       <div className="text-center mb-16">
         <h2 className="heading heading-lg text-4xl mb-4">
-          ALL PROJECTS
+          PROJECTS
         </h2>
         <p className="text-lg text-text-primary max-w-3xl mx-auto">
-          9 key projects showcasing ML engineering, automation, and system design expertise.
+          Some key projects showcasing ML engineering, automation, and system design expertise.
         </p>
       </div>
       

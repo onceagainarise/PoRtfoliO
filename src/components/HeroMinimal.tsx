@@ -11,11 +11,11 @@ export default function HeroMinimal() {
         
         <div className="space-y-4 animate-fade-in-up-delay-2">
           <h2 className="heading text-xl text-text-primary">
-            SOFTWARE ENGINEER | AI & BACKEND SYSTEMS
+            MACHINE LEARNING ENGINEER
           </h2>
           
           <p className="text-lg text-text-primary max-w-3xl mx-auto">
-            I build production-ready ML systems and developer tools
+            I build ML systems and AI Agents
           </p>
         </div>
         
@@ -30,16 +30,16 @@ export default function HeroMinimal() {
         
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-in-up-delay-4">
           <div className="text-center">
-            <div className="text-3xl font-bold text-text-primary">2+</div>
-            <div className="meta">YEARS EXPERIENCE</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-accent">3+</div>
+            <div className="text-3xl font-bold text-text-primary">20+</div>
             <div className="meta">ML PROJECTS</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-text-primary">87%</div>
-            <div className="meta">MODEL PRECISION</div>
+            <div className="text-3xl font-bold text-accent">5+</div>
+            <div className="meta">HACKATHONS WIN'S</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-text-primary">2+</div>
+            <div className="meta">CERTIFICATIONS</div>
           </div>
         </div>
       </div>

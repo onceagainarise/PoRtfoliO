@@ -16,42 +16,6 @@ export default function Experience() {
         "Built adaptive agentic systems with dynamic querying and feedback loops, improving data completion accuracy by 40% through iterative refinement and statistical validation",
         "Deployed AI solutions serving 500+ users while implementing testing protocols and performance monitoring to ensure system reliability and optimize model behavior"
       ]
-    },
-    {
-      title: "MACHINE LEARNING ENGINEER",
-      company: "TECH INNOVATIONS LAB",
-      period: "JAN 2024 – MAY 2024",
-      location: "NEW DELHI, INDIA",
-      type: "FULL-TIME",
-      achievements: [
-        "Developed real-time anomaly detection system processing 1M+ financial transactions daily with sub-second latency and 99.99% accuracy",
-        "Built predictive maintenance scheduler using ML models that reduced equipment downtime by 35% and generated $200K+ annual savings",
-        "Led team of 3 engineers in implementing MLOps practices and CI/CD pipelines for model deployment and monitoring"
-      ]
-    },
-    {
-      title: "DATA SCIENCE INTERN",
-      company: "ANALYTICS CONSULTING FIRM",
-      period: "JUN 2023 – AUG 2023",
-      location: "BENGALURU, INDIA",
-      type: "INTERNSHIP",
-      achievements: [
-        "Analyzed 50GB+ of customer data to identify churn patterns and developed predictive models with 85% accuracy",
-        "Created automated ETL pipelines using Python and SQL that reduced data processing time by 70% and improved data quality",
-        "Built interactive dashboards using Streamlit for real-time business metrics visualization, adopted by 3 business units"
-      ]
-    },
-    {
-      title: "FULL STACK DEVELOPER",
-      company: "FINTECH STARTUP",
-      period: "DEC 2022 – MAR 2023",
-      location: "REMOTE",
-      type: "PART-TIME",
-      achievements: [
-        "Developed RESTful APIs using FastAPI and PostgreSQL for financial transaction processing with 99.9% uptime",
-        "Built responsive React frontend with TypeScript for user management and transaction history features",
-        "Implemented authentication, authorization, and security measures compliant with financial industry standards"
-      ]
     }
   ]
 
