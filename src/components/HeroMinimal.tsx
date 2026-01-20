@@ -31,15 +31,15 @@ export default function HeroMinimal() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-in-up-delay-4">
           <div className="text-center">
             <div className="text-3xl font-bold text-text-primary">20+</div>
-            <div className="meta">ML PROJECTS</div>
+            <div className="px-2 py-1 bg-white text-black text-xs font-medium rounded-md">ML PROJECTS</div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-accent">5+</div>
-            <div className="meta">HACKATHONS WIN'S</div>
+            <div className="px-2 py-1 bg-white text-black text-xs font-medium rounded-md">HACKATHONS WIN'S</div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-text-primary">2+</div>
-            <div className="meta">CERTIFICATIONS</div>
+            <div className="px-2 py-1 bg-white text-black text-xs font-medium rounded-md">CERTIFICATIONS</div>
           </div>
         </div>
       </div>

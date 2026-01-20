@@ -92,7 +92,16 @@ export default function AllProjects() {
                   </div>
                   
                   <div className="pt-3 border-t border-border">
-                    <Meta>{project.tech}</Meta>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tech.split(', ').map((tech, techIndex) => (
+                        <span 
+                          key={techIndex}
+                          className="px-2 py-1 bg-white text-black text-xs font-medium rounded-md"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
