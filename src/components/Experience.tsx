@@ -1,9 +1,14 @@
+"use client"
+
 import Section from './ui/Section'
 import Card from './ui/Card'
 import Divider from './ui/Divider'
 import Meta from './ui/Meta'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 export default function Experience() {
+  const { ref: headingRef, isVisible: headingVisible } = useScrollAnimation<HTMLHeadingElement>()
+  const { ref: subheadingRef, isVisible: subheadingVisible } = useScrollAnimation<HTMLParagraphElement>()
   const experiences = [
     {
       title: "AI AUTOMATION INTERN",
@@ -12,9 +17,9 @@ export default function Experience() {
       location: "REMOTE",
       type: "INTERNSHIP",
       achievements: [
-        "Designed data-driven automation pipelines using LLMs to convert unstructured user inputs into structured specifications, reducing manual processing time by 60% through intelligent data transformation workflows",
+        "Designed data-driven automation pipelines using LLMs to convert unstructured user inputs into structured specifications, reducing manual processing time through intelligent data transformation workflows",
         "Built adaptive agentic systems with dynamic querying and feedback loops, improving data completion accuracy by 40% through iterative refinement and statistical validation",
-        "Deployed AI solutions serving 500+ users while implementing testing protocols and performance monitoring to ensure system reliability and optimize model behavior"
+        "Deployed AI solutions serving users while implementing testing protocols and performance monitoring to ensure system reliability and optimize model behavior"
       ]
     }
   ]
@@ -22,10 +27,10 @@ export default function Experience() {
   return (
     <Section id="experience">
       <div className="text-center mb-16">
-        <h2 className="heading heading-lg text-4xl mb-4">
+        <h2 ref={headingRef} className={`heading heading-lg text-4xl mb-4 transition-all duration-300 hover:text-accent hover:scale-105 cursor-pointer animate-on-scroll ${headingVisible ? 'visible' : ''}`}>
           EXPERIENCE
         </h2>
-        <p className="text-lg text-text-primary max-w-3xl mx-auto">
+        <p ref={subheadingRef} className={`text-lg text-text-primary max-w-3xl mx-auto transition-all duration-300 hover:text-white hover:scale-105 cursor-pointer animate-on-scroll ${subheadingVisible ? 'visible' : ''}`}>
           Professional experience in AI/ML engineering, data science, and full-stack development.
         </p>
       </div>

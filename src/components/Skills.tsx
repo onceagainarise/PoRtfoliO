@@ -1,6 +1,11 @@
+"use client"
+
 import Section from './ui/Section'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 export default function Skills() {
+  const { ref: headingRef, isVisible: headingVisible } = useScrollAnimation<HTMLHeadingElement>()
+  const { ref: subheadingRef, isVisible: subheadingVisible } = useScrollAnimation<HTMLParagraphElement>()
 const skills = [
   { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
   { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
@@ -32,10 +37,10 @@ const skills = [
   return (
     <Section id="skills">
       <div className="text-center mb-16">
-        <h2 className="heading heading-lg text-4xl mb-4">
+        <h2 ref={headingRef} className={`heading heading-lg text-4xl mb-4 transition-all duration-300 hover:text-accent hover:scale-105 cursor-pointer animate-on-scroll ${headingVisible ? 'visible' : ''}`}>
           TECH STACK
         </h2>
-        <p className="text-lg text-text-primary max-w-3xl mx-auto">
+        <p ref={subheadingRef} className={`text-lg text-text-primary max-w-3xl mx-auto transition-all duration-300 hover:text-white hover:scale-105 cursor-pointer animate-on-scroll ${subheadingVisible ? 'visible' : ''}`}>
           Technologies I work with across ML engineering, full-stack development, and cloud infrastructure.
         </p>
       </div>

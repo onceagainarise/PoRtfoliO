@@ -1,20 +1,22 @@
+"use client"
+
 import Button from './ui/Button'
 
 export default function HeroMinimal() {
   return (
     <section className="section">
       <div className="text-center space-y-8">
-        <h1 className="heading heading-lg text-4xl md:text-8xl animate-fade-in-up">
+        <h1 className="heading heading-lg text-4xl md:text-8xl animate-fade-in-up transition-all duration-300 hover:text-accent hover:scale-105 cursor-pointer animate-roll-once">
           <span className="inline-block animate-glow">SHUBHAM</span>
           <span className="inline-block bg-white text-black px-3 py-1 ml-3">PATHAK</span>
         </h1>
         
         <div className="space-y-4 animate-fade-in-up-delay-2">
-          <h2 className="heading text-xl text-text-primary">
+          <h2 className="heading text-xl text-text-primary transition-all duration-300 hover:text-accent hover:scale-105 cursor-pointer animate-roll-hover">
             MACHINE LEARNING ENGINEER
           </h2>
           
-          <p className="text-lg text-text-primary max-w-3xl mx-auto">
+          <p className="text-lg text-text-primary max-w-3xl mx-auto transition-all duration-300 hover:text-white hover:scale-105 cursor-pointer animate-roll-hover">
             I build ML systems and AI Agents
           </p>
         </div>

@@ -1,8 +1,13 @@
+"use client"
+
 import Section from './ui/Section'
 import Card from './ui/Card'
 import Meta from './ui/Meta'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 export default function AllProjects() {
+  const { ref: headingRef, isVisible: headingVisible } = useScrollAnimation<HTMLHeadingElement>()
+  const { ref: subheadingRef, isVisible: subheadingVisible } = useScrollAnimation<HTMLParagraphElement>()
   const projects = [
   {
     title: "TRUST-AWARE RAG SYSTEM",
@@ -51,10 +56,10 @@ export default function AllProjects() {
   return (
     <Section id="projects">
       <div className="text-center mb-16">
-        <h2 className="heading heading-lg text-4xl mb-4">
+        <h2 ref={headingRef} className={`heading heading-lg text-4xl mb-4 transition-all duration-300 hover:text-accent hover:scale-105 cursor-pointer animate-on-scroll ${headingVisible ? 'visible' : ''}`}>
           PROJECTS
         </h2>
-        <p className="text-lg text-text-primary max-w-3xl mx-auto">
+        <p ref={subheadingRef} className={`text-lg text-text-primary max-w-3xl mx-auto transition-all duration-300 hover:text-white hover:scale-105 cursor-pointer animate-on-scroll ${subheadingVisible ? 'visible' : ''}`}>
           Some key projects showcasing ML engineering, automation, and system design expertise.
         </p>
       </div>

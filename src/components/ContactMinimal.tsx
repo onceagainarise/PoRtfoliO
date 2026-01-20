@@ -1,16 +1,21 @@
+"use client"
+
 import Section from './ui/Section'
 import Card from './ui/Card'
 import Button from './ui/Button'
 import Meta from './ui/Meta'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 export default function ContactMinimal() {
+  const { ref: headingRef, isVisible: headingVisible } = useScrollAnimation<HTMLHeadingElement>()
+  const { ref: subheadingRef, isVisible: subheadingVisible } = useScrollAnimation<HTMLParagraphElement>()
   return (
     <Section id="contact">
       <div className="text-center mb-16">
-        <h2 className="heading heading-lg text-4xl mb-4">
+        <h2 ref={headingRef} className={`heading heading-lg text-4xl mb-4 transition-all duration-300 hover:text-accent hover:scale-105 cursor-pointer animate-on-scroll ${headingVisible ? 'visible' : ''}`}>
           GET IN <span className="inline-block bg-white text-black px-3 py-1">TOUCH</span>
         </h2>
-        <p className="text-lg text-text-primary">
+        <p ref={subheadingRef} className={`text-lg text-text-primary transition-all duration-300 hover:text-white hover:scale-105 cursor-pointer animate-on-scroll ${subheadingVisible ? 'visible' : ''}`}>
           I'm always interested in challenging problems and collaborations.
         </p>
       </div>
